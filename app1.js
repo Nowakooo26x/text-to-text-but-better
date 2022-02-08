@@ -1,5 +1,5 @@
 fs = require('fs');
-fs.readFile('example.txt', 'utf8', function (err,data) {
+fs.readFile('ang1.txt', 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
     }
@@ -17,7 +17,7 @@ fs.readFile('example.txt', 'utf8', function (err,data) {
 
     let result = msg.join('\n')
 
-    fs.writeFile('result.txt', result, function (err) {
+    fs.writeFile('result1.txt', result, function (err) {
         if (err) return console.log(err);
         console.log('result > result.txt');
     });
